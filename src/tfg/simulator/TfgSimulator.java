@@ -119,7 +119,7 @@ public class TfgSimulator {
                     for(int j = 0; j < mapacopia.size() && conectado == false; j++){
                         if(j != i){
                             Punto2D compara = mapacopia.get(j);
-                            if(compara.dato.equals("x")){
+                            if(compara.dato.equals("o")){
                                double distancia = getDistancia(punto, compara);
                                if(recibeMensaje(distancia))
                                {
@@ -134,7 +134,7 @@ public class TfgSimulator {
                 }
             } 
             
-            imprime_resultado(times, mapacopia);
+            imprime_resultado(times, mapa);
         }
         // TODO code application logic here
     }
